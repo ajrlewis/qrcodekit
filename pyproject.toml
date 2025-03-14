@@ -1,18 +1,20 @@
 [project]
 name = "qrcodekit"
-version = "0.1.0"
-description = ""
+version = "0.2.0"
+description = "A collection of QR code tools."
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [
     { name = "ajrlewis", email = "hello@ajrlewis.com" }
 ]
 dependencies = [
-    "pillow==10.2.0",
-    "pypng==0.20220715.0",
-    "qrcode==7.4.2",
-    "typing_extensions==4.9.0"
+    "loguru==0.7.3",
+    "pillow==11.1.0",
+    "qrcode==8.0",
 ]
 
-[tool.setuptools]
-packages = ["qrcodekit", "fonts", "images", "scripts"]
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]

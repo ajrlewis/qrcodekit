@@ -1,6 +1,6 @@
 # qrcodekit
 
-![My Package Logo](images/logo.png)
+## Overview
 
 ## Installation
 
